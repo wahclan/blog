@@ -12,12 +12,12 @@ const AuthLinks = () => {
   return (
     <>
       {status === "unauthenticated" ? (
-        <Link href="/login" className={styles.link}>
+        <Link href="https://blog-wahclan.vercel.app/login" className={styles.link}>
           Login
         </Link>
       ) : (
         <>
-          <Link href="/write" className={styles.link}>
+          <Link href="https://blog-wahclan.vercel.app/write" className={styles.link}>
             Write
           </Link>
           <span className={styles.link} onClick={signOut}>
@@ -39,7 +39,7 @@ const AuthLinks = () => {
             <Link href="/login">Login</Link>
           ) : (
             <>
-              <Link href="/write">Write</Link>
+              <Link href="https://blog-wahclan.vercel.app/write">Write</Link>
               <span className={styles.link}>Logout</span>
             </>
           )}
